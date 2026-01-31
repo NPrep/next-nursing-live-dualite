@@ -41,12 +41,14 @@ export const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
-              <Link
-                to="/contact"
+              <a
+                href="https://nprep.in/login"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-brand-red hover:bg-red-700 text-white px-6 py-2.5 rounded font-bold uppercase text-sm transition-colors shadow-sm border-b-4 border-red-800 active:border-b-0 active:translate-y-1"
               >
                 Admission Open
-              </Link>
+              </a>
             </nav>
 
             {/* Mobile Menu Button */}
@@ -74,13 +76,15 @@ export const Navbar = () => {
                 </Link>
               ))}
               <div className="p-4">
-                <Link
-                  to="/contact"
+                <a
+                  href="https://nprep.in/login"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block w-full text-center bg-brand-red text-white px-6 py-3 rounded font-bold uppercase"
                   onClick={() => setIsOpen(false)}
                 >
                   Admission Open
-                </Link>
+                </a>
               </div>
             </div>
           </div>

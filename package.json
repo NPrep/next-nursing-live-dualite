@@ -44,7 +44,13 @@
     "reactSnap":  {
                       "source":  "dist",
                       "include":  [
-                                      "/"
+                                      "/",
+                                      "/blog",
+                                      "/contact",
+                                      "/courses",
+                                      "/free-tests",
+                                      "/pyq",
+                                      "/subject-tests"
                                   ],
                       "crawl":  true,
                       "inlineCss":  true,

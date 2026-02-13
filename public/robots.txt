@@ -13,4 +13,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://nnlone.com/sitemap.xml
+Sitemap: https://nextlivenursing.com/sitemap.xml

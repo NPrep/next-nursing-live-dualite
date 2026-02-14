@@ -20,14 +20,17 @@ export const Navbar = () => {
       <TopBar />
       <header className="sticky top-0 z-50 bg-white shadow-md border-b border-gray-100">
         <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center h-24">
-            {/* Logo */}
-            <Link to="/" className="flex items-center gap-3 group">
-              <img 
-                src="https://images.dualite.app/de7c7353-5b72-41c6-a07c-4a725f050847/asset-86e42b85-da8b-464d-912c-6ce94173786f.webp" 
-                alt="NNLONE Logo" 
-                className="h-20 w-auto object-contain drop-shadow-sm group-hover:scale-105 transition-transform duration-300"
-              />
+          <div className="flex justify-between items-center h-20">
+            {/* Logo - Text Based */}
+            <Link to="/" className="flex items-center gap-2 group">
+              <div className="flex flex-col">
+                <span className="text-3xl font-extrabold text-brand-blue tracking-tighter leading-none">
+                  NNLONE
+                </span>
+                <span className="text-[10px] font-bold text-brand-red uppercase tracking-widest leading-none">
+                  Nursing Academy
+                </span>
+              </div>
             </Link>
 
             {/* Desktop Navigation */}

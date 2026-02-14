@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
 import { Home } from './pages/Home';
@@ -10,13 +10,18 @@ import { FreeTestsPage } from './pages/FreeTestsPage';
 import { SubjectTestsPage } from './pages/SubjectTestsPage';
 import { BlogListingPage } from './pages/BlogListingPage';
 import { BlogPostPage } from './pages/BlogPostPage';
+import { RouterWrapper } from './next/RouterWrapper';
 
 // Simple wrappers for page layout
 const CoursesPage = () => <div className="pt-10"><Courses /></div>;
 
-function App() {
+type AppProps = {
+  initialPath?: string;
+};
+
+function App({ initialPath = '/' }: AppProps) {
   return (
-    <Router>
+    <RouterWrapper initialPath={initialPath}>
       <div className="flex flex-col min-h-screen font-sans text-gray-900 bg-white">
         <Navbar />
         <div className="flex-grow">
@@ -33,7 +38,7 @@ function App() {
         </div>
         <Footer />
       </div>
-    </Router>
+    </RouterWrapper>
   );
 }
 

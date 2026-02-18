@@ -7,9 +7,9 @@ export const Hero = () => {
       {/* Background Image - AIIMS Style Building */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1587351021759-3e566b9af9ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=2072&q=80" 
+          src="/images/aiims-building-bg.svg" 
           alt="AIIMS Building Background" 
-          className="w-full h-full object-cover opacity-[0.15]"
+          className="w-full h-full object-cover opacity-20"
         />
         {/* Subtle white gradient to fade bottom */}
         <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/20 to-white"></div>

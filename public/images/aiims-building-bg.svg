@@ -1,0 +1,41 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="960" y1="0" x2="960" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#BFD8FF"/>
+      <stop offset="1" stop-color="#E8F0FF"/>
+    </linearGradient>
+    <linearGradient id="building" x1="960" y1="250" x2="960" y2="930" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C7CEDD"/>
+      <stop offset="1" stop-color="#9EA8BF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+
+  <rect x="260" y="360" width="1400" height="500" rx="24" fill="url(#building)"/>
+  <rect x="220" y="820" width="1480" height="80" rx="20" fill="#8D97B0"/>
+
+  <rect x="820" y="300" width="280" height="560" rx="16" fill="#B0B9CD"/>
+  <rect x="860" y="200" width="200" height="140" rx="80" fill="#B0B9CD"/>
+
+  <g fill="#7A859E">
+    <rect x="340" y="430" width="110" height="80" rx="8"/>
+    <rect x="490" y="430" width="110" height="80" rx="8"/>
+    <rect x="640" y="430" width="110" height="80" rx="8"/>
+    <rect x="1170" y="430" width="110" height="80" rx="8"/>
+    <rect x="1320" y="430" width="110" height="80" rx="8"/>
+    <rect x="1470" y="430" width="110" height="80" rx="8"/>
+
+    <rect x="340" y="560" width="110" height="80" rx="8"/>
+    <rect x="490" y="560" width="110" height="80" rx="8"/>
+    <rect x="640" y="560" width="110" height="80" rx="8"/>
+    <rect x="1170" y="560" width="110" height="80" rx="8"/>
+    <rect x="1320" y="560" width="110" height="80" rx="8"/>
+    <rect x="1470" y="560" width="110" height="80" rx="8"/>
+  </g>
+
+  <rect x="900" y="540" width="120" height="240" rx="10" fill="#7A859E"/>
+
+  <text x="960" y="470" text-anchor="middle" fill="#34426A" font-family="Arial, sans-serif" font-size="72" font-weight="700">AIIMS</text>
+  <text x="960" y="905" text-anchor="middle" fill="#5A6685" font-family="Arial, sans-serif" font-size="34" font-weight="600">All India Institute of Medical Sciences</text>
+</svg>

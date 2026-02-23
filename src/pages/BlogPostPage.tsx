@@ -42,7 +42,7 @@ export const BlogPostPage = () => {
       {/* Hero Header */}
       <div className="bg-brand-dark text-white py-16 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <img src={post.image} alt="Background" className="w-full h-full object-cover blur-sm" />
+          <img loading="lazy" src={post.image} alt="Background" className="w-full h-full object-cover blur-sm" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <Link to="/blog" className="inline-flex items-center text-gray-300 hover:text-white mb-6 transition-colors">

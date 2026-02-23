@@ -9,7 +9,7 @@ export const About = () => {
           <div className="relative">
             <div className="absolute -top-4 -left-4 w-24 h-24 bg-brand-blue/10 rounded-full -z-10"></div>
             <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-brand-red/10 rounded-full -z-10"></div>
-            <img 
+            <img loading="lazy" 
               src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
               alt="Nursing Institute Building" 
               className="rounded-lg shadow-xl w-full object-cover h-[400px]"

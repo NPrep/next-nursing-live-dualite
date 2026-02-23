@@ -6,7 +6,7 @@ export const Hero = () => {
     <div className="relative bg-white overflow-hidden">
       {/* Background Image - AIIMS Style Building */}
       <div className="absolute inset-0 z-0">
-        <img 
+        <img loading="lazy" 
           src="/images/aiims-building-bg.svg" 
           alt="AIIMS Building Background" 
           className="w-full h-full object-cover opacity-20"
@@ -62,7 +62,7 @@ export const Hero = () => {
           {/* Hero Image / Form Area */}
           <div className="hidden md:block relative">
             <div className="relative rounded-xl overflow-hidden shadow-2xl border border-gray-100 transform rotate-1 hover:rotate-0 transition-transform duration-500">
-               <img 
+               <img loading="lazy" 
                 src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
                 alt="Nursing Classroom" 
                 className="w-full h-auto"

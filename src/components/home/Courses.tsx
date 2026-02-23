@@ -69,7 +69,7 @@ export const Courses = () => {
             <div key={course.id} className="bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 flex flex-col h-full group">
               <div className="h-48 overflow-hidden relative">
                 <div className="absolute inset-0 bg-brand-blue/20 group-hover:bg-brand-blue/10 transition-colors z-10"></div>
-                <img 
+                <img loading="lazy" 
                   src={course.image} 
                   alt={course.title} 
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"

@@ -50,7 +50,7 @@ export const Navbar = () => {
                 rel="noopener noreferrer"
                 className="bg-brand-red hover:bg-red-700 text-white px-6 py-2.5 rounded font-bold uppercase text-sm transition-colors shadow-sm border-b-4 border-red-800 active:border-b-0 active:translate-y-1"
               >
-                Admission Open
+                Admission open
               </a>
             </nav>
 
@@ -66,7 +66,7 @@ export const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg z-50">
+          <div className="md:hidden nprep-mobile-drawer">
             <div className="flex flex-col py-4">
               {navLinks.map((link) => (
                 <Link
@@ -86,7 +86,7 @@ export const Navbar = () => {
                   className="block w-full text-center bg-brand-red text-white px-6 py-3 rounded font-bold uppercase"
                   onClick={() => setIsOpen(false)}
                 >
-                  Admission Open
+                  Admission open
                 </a>
               </div>
             </div>

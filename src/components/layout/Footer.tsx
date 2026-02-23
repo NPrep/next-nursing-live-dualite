@@ -62,14 +62,14 @@ export const Footer = () => {
             <ul className="space-y-4 text-sm">
               <li className="flex items-center">
                 <Phone size={20} className="text-brand-red mr-3 flex-shrink-0" />
-                <span>+91 6377 6391 69</span>
+                <a href="tel:+916377639169" className="hover:text-brand-gold transition-colors">+91 6377 6391 69</a>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
-          <p className="mb-4 text-gray-400 max-w-4xl mx-auto italic">
+          <p className="nprep-disclaimer-banner mb-4 text-gray-400 max-w-4xl mx-auto italic">
             Disclaimer: This is not an official government portal. This is a help portal regarding nursing exams and coaching. All information provided is for educational purposes only.
           </p>
           <p>&copy; {new Date().getFullYear()} NNLONE Nursing Academy. All Rights Reserved.</p>

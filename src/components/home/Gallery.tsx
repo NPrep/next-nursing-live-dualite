@@ -22,7 +22,7 @@ export const Gallery = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {images.map((src, index) => (
             <div key={index} className="overflow-hidden rounded-lg shadow-md h-48 md:h-64 group">
-              <img 
+              <img loading="lazy" 
                 src={src} 
                 alt={`Gallery ${index + 1}`} 
                 className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"

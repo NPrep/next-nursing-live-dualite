@@ -116,6 +116,16 @@ export const Courses = () => {
                   <div className="absolute right-4 top-4 z-20 rounded bg-brand-red px-3 py-1 text-xs font-bold uppercase tracking-wider text-white shadow-sm">
                     {course.tag}
                   </div>
+            <div key={course.id} className="bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 flex flex-col h-full group">
+              <div className="h-48 overflow-hidden relative">
+                <div className="absolute inset-0 bg-brand-blue/20 group-hover:bg-brand-blue/10 transition-colors z-10"></div>
+                <img loading="lazy" 
+                  src={course.image} 
+                  alt={course.title} 
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute top-4 right-4 z-20 bg-brand-red text-white px-3 py-1 rounded text-xs font-bold uppercase tracking-wider shadow-sm">
+                  {course.tag}
                 </div>
               ) : (
                 <div className="relative flex h-44 items-center justify-center bg-gradient-to-br from-brand-blue to-blue-900 px-6 text-center">

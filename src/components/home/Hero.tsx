@@ -8,6 +8,16 @@ export const Hero = () => {
         <div className="absolute -top-20 -left-20 h-72 w-72 rounded-full bg-brand-blue/15 blur-3xl"></div>
         <div className="absolute top-1/3 right-0 h-80 w-80 rounded-full bg-brand-red/15 blur-3xl"></div>
         <div className="absolute -bottom-16 left-1/3 h-64 w-64 rounded-full bg-brand-gold/20 blur-3xl"></div>
+    <div className="relative bg-white overflow-hidden">
+      {/* Background Image - AIIMS Style Building */}
+      <div className="absolute inset-0 z-0">
+        <img loading="lazy" 
+          src="/images/aiims-building-bg.svg" 
+          alt="AIIMS Building Background" 
+          className="w-full h-full object-cover opacity-20"
+        />
+        {/* Subtle white gradient to fade bottom */}
+        <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/20 to-white"></div>
       </div>
 
       <div className="container relative z-10 mx-auto px-4 py-16 md:py-28">
@@ -60,6 +70,13 @@ export const Hero = () => {
                 src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
                 alt="NNLONE nursing classroom"
                 className="h-auto w-full"
+          {/* Hero Image / Form Area */}
+          <div className="hidden md:block relative">
+            <div className="relative rounded-xl overflow-hidden shadow-2xl border border-gray-100 transform rotate-1 hover:rotate-0 transition-transform duration-500">
+               <img loading="lazy" 
+                src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                alt="Nursing Classroom" 
+                className="w-full h-auto"
               />
               <div className="absolute bottom-0 left-0 right-0 border-t border-brand-gold/30 bg-white/95 p-4 backdrop-blur-sm">
                 <div className="flex items-center justify-between gap-4">

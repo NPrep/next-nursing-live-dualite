@@ -5,64 +5,62 @@ import { UserCheck, BookOpen, MonitorPlay, Award, Users, ClipboardList } from 'l
 const features = [
   {
     icon: <UserCheck size={32} />,
-    title: "Expert Faculty",
-    description: "Learn from India's top nursing educators and subject matter experts."
+    title: 'Expert Faculty',
+    description: 'Led by NNLONE senior nursing mentors with 10+ years of exam-oriented teaching experience.'
   },
   {
     icon: <BookOpen size={32} />,
-    title: "Updated Study Material",
-    description: "Comprehensive notes covering the latest syllabus and exam patterns."
+    title: 'Updated Study Material',
+    description: 'NNLONE + NPrep notes aligned with the latest NORCET, ESIC, RRB and state nursing exam patterns.'
   },
   {
     icon: <MonitorPlay size={32} />,
-    title: "Hybrid Learning",
-    description: "Flexible offline and online classes to suit your schedule."
+    title: 'Hybrid Learning',
+    description: 'Offline classroom support + online live classes and recorded revision via NPrep app access.'
   },
   {
     icon: <ClipboardList size={32} />,
-    title: "Test Series",
-    description: "Regular mock tests with detailed analysis to track your progress."
+    title: 'Structured Test Series',
+    description: 'Daily quizzes, subject-wise tests and full-length mocks with performance tracking dashboards.'
   },
   {
     icon: <Award size={32} />,
-    title: "Proven Results",
-    description: "Highest selection ratio in NORCET and State Nursing exams."
+    title: 'Proven Results',
+    description: 'Result-focused mentorship with consistent selections in NORCET and other nursing recruitment exams.'
   },
   {
     icon: <Users size={32} />,
-    title: "Doubt Support",
-    description: "Dedicated doubt clearing sessions and mentorship."
+    title: 'Doubt Support',
+    description: 'Dedicated doubt-solving sessions, mentor follow-ups and guided revision strategy calls.'
   }
 ];
 
 export const WhyChooseUs = () => {
   return (
-    <section className="py-16 md:py-24 bg-brand-blue text-white relative overflow-hidden">
-      {/* Decorative background elements */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
-         <div className="absolute -top-24 -left-24 w-96 h-96 bg-brand-red rounded-full mix-blend-overlay blur-3xl"></div>
-         <div className="absolute top-1/2 right-0 w-64 h-64 bg-brand-gold rounded-full mix-blend-overlay blur-3xl"></div>
+    <section className="relative overflow-hidden bg-brand-blue py-16 text-white md:py-24">
+      <div className="pointer-events-none absolute left-0 top-0 h-full w-full overflow-hidden opacity-10">
+        <div className="absolute -left-24 -top-24 h-96 w-96 rounded-full bg-brand-red mix-blend-overlay blur-3xl"></div>
+        <div className="absolute right-0 top-1/2 h-64 w-64 rounded-full bg-brand-gold mix-blend-overlay blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose NNLONE?</h2>
-          <div className="w-24 h-1.5 bg-brand-gold mx-auto mb-6 rounded-full"></div>
-          <p className="text-blue-100 max-w-2xl mx-auto text-lg">
-            We don't just teach; we mentor you to success. Here is why thousands of nursing students trust us.
-          </p>
-        </div>
+      <div className="container relative z-10 mx-auto px-4">
+        <SectionHeading
+          title="Why Choose NNLONE?"
+          subtitle="We combine classroom discipline, app-based learning, and exam analytics to improve your final score."
+          light
+        />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
-            <div key={index} className="bg-blue-900/40 backdrop-blur-sm border border-brand-blue/50 p-8 rounded-lg hover:bg-brand-blue/60 transition-colors hover:border-brand-gold/50 group">
-              <div className="bg-white text-brand-red w-14 h-14 rounded-full flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform">
+            <div
+              key={index}
+              className="group rounded-lg border border-brand-blue/50 bg-blue-900/40 p-8 backdrop-blur-sm transition-colors hover:border-brand-gold/50 hover:bg-brand-blue/60"
+            >
+              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-white text-brand-red shadow-lg transition-transform group-hover:scale-110">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white group-hover:text-brand-gold transition-colors">{feature.title}</h3>
-              <p className="text-blue-100 leading-relaxed">
-                {feature.description}
-              </p>
+              <h3 className="mb-3 text-xl font-bold text-white transition-colors group-hover:text-brand-gold">{feature.title}</h3>
+              <p className="leading-relaxed text-blue-100">{feature.description}</p>
             </div>
           ))}
         </div>

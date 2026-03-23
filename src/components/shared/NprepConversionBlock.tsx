@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const NprepConversionBlock = () => {
+export const NPrepConversionBlock = () => {
   return (
     <section className="bg-gray-50 py-12 px-6">
       <div className="mx-auto max-w-6xl rounded-2xl border border-blue-100 bg-white p-8 shadow-md">

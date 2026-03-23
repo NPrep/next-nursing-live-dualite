@@ -1,10 +1,9 @@
 import React from 'react';
-import { Facebook, Instagram, Youtube, Phone, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
-    <footer className="border-t-4 border-brand-gold bg-brand-dark pb-8 pt-16 text-gray-300">
+    <footer className="mt-auto border-t border-gray-200 bg-white py-8">
       <div className="container mx-auto px-4">
         <div className="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
@@ -76,6 +75,7 @@ export const Footer = () => {
           <p className="mb-1">&copy; {new Date().getFullYear()} NNLONE Nursing Academy. All Rights Reserved.</p>
           <p className="text-xs text-gray-400">NNLONE Nursing Academy (nextlivenursing.com)</p>
         </div>
+        <p className="text-sm text-gray-600">© {new Date().getFullYear()} nextlivenursing.com</p>
       </div>
     </footer>
   );

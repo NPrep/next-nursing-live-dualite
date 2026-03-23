@@ -1,98 +1,50 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import { TopBar } from './TopBar';
+
+const navLinks = [
+  { name: 'Home', path: '/' },
+  { name: 'Review', path: '/next-live-nursing-review' },
+  { name: 'Fees', path: '/next-live-nursing-fees' },
+  { name: 'App', path: '/next-live-nursing-app' },
+  { name: 'Comparison', path: '/next-live-nursing-vs-nprep' },
+  { name: 'Alternatives', path: '/next-live-nursing-alternatives' },
+];
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'Courses', path: '/courses' },
-    { name: 'PYQ', path: '/pyq' },
-    { name: 'Mock Tests', path: '/free-tests' },
-    { name: 'Subject Tests', path: '/subject-tests' },
-    { name: 'Blog', path: '/blog' },
-  ];
-
   return (
-    <>
-      <TopBar />
-      <header className="sticky top-0 z-50 bg-white shadow-md border-b border-gray-100">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center h-20">
-            {/* Logo - Text Based */}
-            <Link to="/" className="flex items-center gap-2 group">
-              <div className="flex flex-col">
-                <span className="text-3xl font-extrabold text-brand-blue tracking-tighter leading-none">
-                  NNLONE
-                </span>
-                <span className="text-[10px] font-bold text-brand-red uppercase tracking-widest leading-none">
-                  Nursing Academy
-                </span>
-              </div>
+    <header className="sticky top-0 z-50 border-b border-gray-200 bg-white">
+      <div className="container mx-auto flex h-16 items-center justify-between px-4">
+        <Link to="/" className="text-xl font-bold text-brand-blue">
+          Next Live Nursing
+        </Link>
+
+        <nav className="hidden items-center gap-5 md:flex">
+          {navLinks.map((link) => (
+            <Link key={link.path} to={link.path} className="text-sm font-medium text-gray-700 hover:text-brand-blue">
+              {link.name}
             </Link>
+          ))}
+        </nav>
 
-            {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  to={link.path}
-                  className="text-gray-700 hover:text-brand-red font-bold text-sm uppercase tracking-wide transition-colors"
-                >
-                  {link.name}
-                </Link>
-              ))}
-              <a
-                href="https://nprep.in/login"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-brand-red hover:bg-red-700 text-white px-6 py-2.5 rounded font-bold uppercase text-sm transition-colors shadow-sm border-b-4 border-red-800 active:border-b-0 active:translate-y-1"
-              >
-                Admission open
-              </a>
-            </nav>
+        <button onClick={() => setIsOpen((prev) => !prev)} className="md:hidden">
+          {isOpen ? <X /> : <Menu />}
+        </button>
+      </div>
 
-            {/* Mobile Menu Button */}
-            <button
-              className="md:hidden text-brand-blue"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              {isOpen ? <X size={32} /> : <Menu size={32} />}
-            </button>
+      {isOpen && (
+        <nav className="border-t border-gray-200 px-4 py-3 md:hidden">
+          <div className="flex flex-col gap-3">
+            {navLinks.map((link) => (
+              <Link key={link.path} to={link.path} className="text-sm font-medium text-gray-700" onClick={() => setIsOpen(false)}>
+                {link.name}
+              </Link>
+            ))}
           </div>
-        </div>
-
-        {/* Mobile Navigation */}
-        {isOpen && (
-          <div className="md:hidden nprep-mobile-drawer">
-            <div className="flex flex-col py-4">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  to={link.path}
-                  className="px-6 py-3 text-gray-700 hover:bg-brand-blue/5 hover:text-brand-blue font-medium border-b border-gray-50 last:border-none"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.name}
-                </Link>
-              ))}
-              <div className="p-4">
-                <a
-                  href="https://nprep.in/login"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full text-center bg-brand-red text-white px-6 py-3 rounded font-bold uppercase"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Admission open
-                </a>
-              </div>
-            </div>
-          </div>
-        )}
-      </header>
-    </>
+        </nav>
+      )}
+    </header>
   );
 };

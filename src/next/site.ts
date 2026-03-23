@@ -1,8 +1,8 @@
 export const site = {
-  name: 'NNLONE Nursing Academy',
+  name: 'Next Live Nursing',
   domain: 'nextlivenursing.com',
   url: 'https://nextlivenursing.com',
-  description: 'NNLONE Nursing Academy offers nursing exam preparation, test series, and free study resources.',
+  description: 'Neutral review, pricing details, app information, and comparisons for Next Live Nursing.',
   email: 'administration@nprep.in',
   logoPath: '/favicon.svg'
 };

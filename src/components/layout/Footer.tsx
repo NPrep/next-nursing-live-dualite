@@ -69,6 +69,7 @@ export const Footer = () => {
         <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
           <p className="mx-auto mb-4 max-w-4xl text-gray-400 italic">
             Disclaimer: This is not an official government portal. This is an educational support platform for nursing exam preparation.
+          </p>
           <p className="nprep-disclaimer-banner mb-4 text-gray-400 max-w-4xl mx-auto italic">
             Disclaimer: This is not an official government portal. This is a help portal regarding nursing exams and coaching. All information provided is for educational purposes only.
           </p>

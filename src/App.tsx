@@ -1,14 +1,19 @@
 import React from 'react';
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
-import { RouterWrapper } from './next/RouterWrapper';
 import { Home } from './pages/Home';
-import { NextLiveNursingReviewPage } from './pages/NextLiveNursingReviewPage';
-import { NextLiveNursingComparisonPage } from './pages/NextLiveNursingComparisonPage';
-import { NextLiveNursingFeesPage } from './pages/NextLiveNursingFeesPage';
-import { NextLiveNursingAppPage } from './pages/NextLiveNursingAppPage';
-import { NextLiveNursingAlternativesPage } from './pages/NextLiveNursingAlternativesPage';
+import { ContactPage } from './pages/ContactPage';
+import { Courses } from './components/home/Courses';
+import { PYQPage } from './pages/PYQPage';
+import { FreeTestsPage } from './pages/FreeTestsPage';
+import { SubjectTestsPage } from './pages/SubjectTestsPage';
+import { BlogListingPage } from './pages/BlogListingPage';
+import { BlogPostPage } from './pages/BlogPostPage';
+import { RouterWrapper } from './next/RouterWrapper';
+
+// Simple wrappers for page layout
+const CoursesPage = () => <div className="pt-10"><Courses /></div>;
 
 type AppProps = {
   initialPath?: string;
@@ -17,17 +22,18 @@ type AppProps = {
 function App({ initialPath = '/' }: AppProps) {
   return (
     <RouterWrapper initialPath={initialPath}>
-      <div className="flex min-h-screen flex-col bg-gray-50 font-sans text-gray-900">
+      <div className="flex flex-col min-h-screen font-sans text-gray-900 bg-white">
         <Navbar />
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/next-live-nursing-review" element={<NextLiveNursingReviewPage />} />
-            <Route path="/next-live-nursing-vs-nprep" element={<NextLiveNursingComparisonPage />} />
-            <Route path="/next-live-nursing-fees" element={<NextLiveNursingFeesPage />} />
-            <Route path="/next-live-nursing-app" element={<NextLiveNursingAppPage />} />
-            <Route path="/next-live-nursing-alternatives" element={<NextLiveNursingAlternativesPage />} />
-            <Route path="*" element={<Navigate to="/" replace />} />
+            <Route path="/courses" element={<CoursesPage />} />
+            <Route path="/pyq" element={<PYQPage />} />
+            <Route path="/free-tests" element={<FreeTestsPage />} />
+            <Route path="/subject-tests" element={<SubjectTestsPage />} />
+            <Route path="/blog" element={<BlogListingPage />} />
+            <Route path="/blog/:slug" element={<BlogPostPage />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </div>
         <Footer />

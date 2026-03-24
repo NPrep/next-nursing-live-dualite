@@ -16,29 +16,25 @@ const quickLinks = [
 
 export const PageLayout = ({ title, children }: PageLayoutProps) => {
   return (
-    <main className="bg-white">
-      <section className="py-12 px-6 bg-white">
-        <div className="mx-auto max-w-6xl">
-          <h1 className="text-3xl font-bold mb-4 text-gray-900">{title}</h1>
-          <nav className="flex flex-wrap gap-3">
-            {quickLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className="rounded-xl border border-gray-300 bg-gray-50 px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-blue hover:text-brand-blue"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-        </div>
-      </section>
+    <main className="bg-gray-50 py-12">
+      <div className="container mx-auto max-w-5xl px-4">
+        <h1 className="mb-6 text-4xl font-bold text-gray-900">{title}</h1>
 
-      <section className="py-12 px-6 bg-gray-50">
-        <div className="mx-auto max-w-6xl rounded-2xl bg-white p-8 shadow-sm text-gray-800">{children}</div>
-      </section>
+        <nav className="mb-8 flex flex-wrap gap-3">
+          {quickLinks.map((link) => (
+            <Link
+              key={link.path}
+              to={link.path}
+              className="rounded border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-blue hover:text-brand-blue"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
 
-      <NprepConversionBlock />
+        <section className="rounded-xl border border-gray-200 bg-white p-6 text-gray-800">{children}</section>
+        <NprepConversionBlock />
+      </div>
     </main>
   );
 };

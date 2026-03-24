@@ -2,32 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nextlivenursing.com/</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://nextlivenursing.com/next-live-nursing-alternatives/</loc>
-    <lastmod>2026-03-23</lastmod>
+    <loc>https://nextlivenursing.com/blog/</loc>
+    <lastmod>2026-02-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nextlivenursing.com/next-live-nursing-app/</loc>
-    <lastmod>2026-03-23</lastmod>
+    <loc>https://nextlivenursing.com/contact/</loc>
+    <lastmod>2026-02-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nextlivenursing.com/next-live-nursing-fees/</loc>
-    <lastmod>2026-03-23</lastmod>
+    <loc>https://nextlivenursing.com/courses/</loc>
+    <lastmod>2026-02-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nextlivenursing.com/next-live-nursing-review/</loc>
-    <lastmod>2026-03-23</lastmod>
+    <loc>https://nextlivenursing.com/free-tests/</loc>
+    <lastmod>2026-02-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nextlivenursing.com/next-live-nursing-vs-nprep/</loc>
-    <lastmod>2026-03-23</lastmod>
+    <loc>https://nextlivenursing.com/pyq/</loc>
+    <lastmod>2026-02-23</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextlivenursing.com/subject-tests/</loc>
+    <lastmod>2026-02-23</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>

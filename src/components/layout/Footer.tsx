@@ -56,11 +56,14 @@ export const Footer = () => {
           <div>
             <h3 className="mb-6 border-l-4 border-brand-red pl-3 text-xl font-bold uppercase text-white">Contact Us</h3>
             <ul className="space-y-4 text-sm">
-              <li className="flex items-center">
-                <Phone size={20} className="mr-3 flex-shrink-0 text-brand-red" />
-                <span>+91 6377 6391 69</span>
-                <Phone size={20} className="text-brand-red mr-3 flex-shrink-0" />
-                <a href="tel:+916377639169" className="hover:text-brand-gold transition-colors">+91 6377 6391 69</a>
+              <li>
+                <a
+                  href="tel:+916377639169"
+                  className="inline-flex items-center gap-3 rounded-full bg-white/10 px-4 py-2 font-semibold text-white ring-1 ring-white/10 transition-colors hover:bg-white/15 hover:text-brand-gold"
+                >
+                  <Phone size={18} className="flex-shrink-0 text-brand-red" />
+                  <span>+91 6377 6391 69</span>
+                </a>
               </li>
             </ul>
           </div>

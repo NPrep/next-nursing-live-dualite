@@ -20,9 +20,12 @@ export const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-1">Call Us</h3>
-                    <p className="text-blue-100 text-sm">
+                    <a
+                      href="tel:+916377639169"
+                      className="inline-flex items-center rounded-full bg-white/10 px-3 py-1.5 text-sm font-semibold text-white ring-1 ring-white/20 transition-colors hover:bg-white/15"
+                    >
                       +91 6377 6391 69
-                    </p>
+                    </a>
                   </div>
                 </div>
 

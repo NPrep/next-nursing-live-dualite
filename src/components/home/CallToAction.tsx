@@ -21,7 +21,7 @@ export const CallToAction = () => {
           </Link>
           <a 
             href="tel:+916377639169" 
-            className="bg-brand-blue border-2 border-brand-blue text-white px-10 py-4 rounded font-bold uppercase text-lg hover:bg-blue-900 transition-colors shadow-lg"
+            className="bg-white text-brand-blue px-10 py-4 rounded font-bold uppercase text-lg hover:bg-blue-50 transition-colors shadow-lg border-b-4 border-blue-200"
           >
             Call: +91 6377 6391 69
           </a>
